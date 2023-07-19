@@ -10,7 +10,7 @@ from time import sleep
 
 def iniciar_driver():
     chrome_options = Options()
-    arguments = ['--lang=pt-BR', '--window-size=1000,1000']
+    arguments = ['--lang=pt-BR', '--window-size=1000,1000', '--incognito', '--headless', '--disable-gpu', '--no-sandbox', '--disable-dev-shm-usage']
     for argument in arguments:
         chrome_options.add_argument(argument)
 
